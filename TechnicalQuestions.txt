@@ -1,0 +1,286 @@
+I'm 9 years of experience in Java, Full Stack, Microservices, spring, spring boot.
+
+I was in the industry since 2012. So I almost catch up all Service Oriented Architectures and SDLC, agile
+
+Most of the time was doing REST, SOAP and middleware dataservice. Sometimes I have to deal with RDBMS, NoSQL, Kafa, terraform, Jenkin and some Java EE and AWS services
+
+Sometimes I have to deal with NodeJs, React, Angular, Jquery.
+
+My previous experience was Toyota project by the Cognizant team. The project  was about the platform between auto dealer across the world and toyota manufacture  which call GTS. 
+
+
+Why Java is Platform independent
+
+  Because it's virtual machine which called JVM.
+The Java language and all the API and library are compiled into specific bytecode for different platform.
+different JVM take care of producing different bytecode for different platform.
+One of the concepts or requiremnet when James Goslin and green team invented Oak is that "write once run everywhere".
+
+What is OOP concept?
+	Developing practise or structure of program to write or reuse all or part of code without compromising security  
+OOP include Encapsulation, Inheritence, Polymorphism
+
+Polymorphism
+Enable dynamic binding for many forms of one class. It means when you need to execute one method from child class that extended to main class, the caller doesn't need to know the Type or implementation of the child class for pointer/reference. We can pass or receive that child object by Parent abstract type. JVM will detect the what the actual object type behind the pointer and execute it. 
+
+ Why layer in development
+ To complete structured enterprise applications, only execluding business logic from the main flow is not enough. To maintan the Service Oriented Architecture, we will need presentation, validation, business layer and data access layer as basic. Many different style of SOA are used now adays. Legacy/Rest Facade, Service Bus, Microservices are sample of SOA. 
+
+ Flow of Spring MVC
+ intecept DispatcherServlet as responsibility for all requests coming to servlet container.
+ DispatcherServlet front controller Received all request and route to handler/controller according to annotation or XML configuration
+ After that controller return ModeAndView object.
+ The defined view resolver is read again by the dispatcherServlet to invoke view component
+
+ Serilization 
+ converting the object value and structure into easily transmittable form. 
+
+ Hibernate Object states
+ transient, persistent , detached
+
+Interfaces used in hibernate
+ Session, Session Factory, Configuration, Transaction , Query and Criteria
+
+Spring Boot repositories
+  CrudRepository, PagingOrSorting Repository, or JPARepository   
+
+
+@SpringBootApplication 
+used to mark a configuration class that declares one or more @Bean 
+@Configuration, @EnableAutoConfiguration and @ComponentScan annotations.
+
+Diff HashMap and HashTable
+	HashMap not allowed Null
+	HashTable Synchronized, 
+
+String, StringBuilder and StringBuffer
+String- immutable
+StringBuilder - unsynchronous
+String Buffer - Synchronized
+
+
+final, finally, finalize
+finalize  - destructor of the object
+
+2 ways of thread
+extend Thread 
+implment runnable
+
+What are the benefits of using Multithreading
+Allow the program to run continuously even if a part of it is blocked. 
+Improve performance as compared to traditional parallel programs that use multiple processes. 
+Allows to write effective programs that utilize maximum CPU time
+Improves the responsiveness of complex applications or programs. 
+Increase use of CPU resources and reduce costs of maintenance. 
+
+What is Thread in Java
+Threads are basically the lightweight and smallest unit of processing that can be managed independently by a scheduler. Threads are referred to as parts of a process that simply let a program execute efficiently with other parts or threads of the process at the same time.
+
+What’s the difference between class lock and object lock?
+In Java every class and objects has unique lock.
+can be achieved by static synchronized and synchronized block
+prevent entering from multithread 
+
+
+User Thread and DaemonThread
+DaemonThread is not being waited by the JVM
+create by user or JVM
+critical task and core work
+foreground, back ground
+
+
+How can we create daemon threads?
+setDaemon(true)
+before thread start (Illegal Thread state exception)
+
+What are the wait() and sleep() methods?
+wait() - > inter communication / lock until notify) / synchronized
+sleep() -> static / specific period / not synchronized
+
+ What’s the difference between notify() and notifyAll()?
+wake single and wake up all to compete in object monitor
+
+Wait() / notify() / notifyALl
+every object has a monitor that allows the thread to hold a lock on the object (not for Thread)
+
+ What is Runnable and Callable Interface? Write the difference between them.
+Interface -> encapsualted task <- other threas
+Runnable -> concurrent thread
+Concurrency Package -> break limitation -> enum, static import, generic, return
+
+return
+checkException
+lang / util.concurrent
+run / call
+Override / not need override
+
+start() and run()
+new thread / task definition
+
+
+Explain thread pool?
+pool of thread
+can excute task and put back
+java.util.concurrent.Executors - > factory method
+
+What’s the purpose of the join() method?
+pause current util joined thread kill or completed
+
+Mark and Sweep
+marking, deletion, and compaction/copying
+
+Explain the meaning of the deadlock and when it can occur?
+multiple thread hold lock to different object
+are waiting other resource to complete the task
+
+Explain volatile variables in Java?
+A volatile variable is basically a keyword that is used to ensure and address the visibility of changes
+directlt read from main memory ranther than CPU cache
+
+What is thread starvation?
+What is Livelock? What happens when it occurs?
+What is BlockingQueue?
+Can you start a thread twice?
+Explain context switching.
+What is CyclicBarrier and CountDownLatch?
+What do you mean by inter-thread communication?
+What is Thread Scheduler and Time Slicing?
+What is a shutdown hook?
+What is ConcurrentHashMap and Hashtable? In java, why is ConcurrentHashMap considered faster than Hashtable?
+
+
+
+What is React?
+Javascript Library/ composable user interface/ SPA
+handling view layer
+
+What is the history behind React evolution?
+XHP, XML + PHP
+
+What are the major features of React?
+JSX
+Virtual Dom
+server-side rendering
+unidirectional or one way 
+resuable component
+
+What is JSX?
+JavaScript XML and it is an XML-like syntax extension to ECMAScript
+
+What is the difference between Element and Component?
+Like Folder and Files, Element can contain elements
+
+How to create components in React?
+Function Component - > prop object as first parameter
+Class Component
+
+When to use a Class Component over a Function Component?
+Function component equivalent is not present yet
+lifecycle methods
+
+What are Pure Components?
+same output for the same state and props
+
+What is state in React?
+object that holds some information that may change over the lifetime of component
+
+What are props in React?
+input to component
+Pass custom data to your component.
+Trigger state changes.
+
+What is the difference between state and props?
+state managed by component for internal purpose/ rerender
+props pass by the parent / readonly
+
+React LifeCycle
+Mounting, Updating, and Unmounting.
+
+Why should we not update the state directly?
+it will not re-render unless use setState
+
+What is the purpose of callback function as an argument of setState()?
+setState() is asychronous and invoke after render
+
+How to bind methods or event handlers in JSX callbacks?
+Binding in Constructor
+Public class fields syntax:
+Arrow functions in callbacks
+
+How to pass a parameter to an event handler or callback?
+arrow function in event handler
+.bind()
+function
+
+What are synthetic events in React?
+SyntheticEvent is a cross-browser wrapper around the browser's native event
+NativeEvent can be accessed directly frm synthetic browser
+
+What are inline conditional expressions?
+
+What is the use of refs?
+accessing to DOM element
+
+
+
+How does an Angular application work?
+angular.json / all the configuration of the application
+main.ts / entry point , bootstrapModule
+AppModule / bootstrap the components
+Component / selector, template, styleUrl
+
+What are some of the advantages of Angular over other frameworks?
+Features that are provided out of the box
+Declaritive UI - HTML
+google support
+
+What are the advantages of Angular over React?
+Bidirectional data binding
+Depedency Injection
+mobile / web
+wide range tool and library
+
+Diff AngularJS / Angular
+Controller / Component
+javascript / typescript
+no mobile / mobile support
+key word ng-* / [] ()
+
+Diff Angular expression vs HTML
+local scope / global
+just blank / null, undefined
+pipe / -
+
+What are Single Page Applications (SPA)?
+
+What are templates in Angular?
+inline template
+linked template
+
+
+Directives
+Component Directive
+structure directives, manipulate DOM *ngIf
+attrbute directives
+
+
+Explain Components, Modules and Services in Angular
+ group components, directives, services, and pipes.
+
+ Root Modules -> BrowserModule
+ Feature Modules -> CommonModule
+
+ 
+
+
+
+
+Kafka
+What is Kafka
+Zoo Keeper
+
+
+
+
+
+
