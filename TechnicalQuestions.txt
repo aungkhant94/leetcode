@@ -6,7 +6,7 @@ Most of the time was doing REST, SOAP and middleware dataservice. Sometimes I ha
 
 Sometimes I have to deal with NodeJs, React, Angular, Jquery.
 
-My previous experience was Toyota project by the Cognizant team. The project  was about the platform between auto dealer across the world and toyota manufacture  which call GTS. 
+My previous experience was Toyota project by the Cognizant team. The project  was about the platform between auto dealer across the world and toyota manufacture  which call GTS. When Auto Dealer Try to sell the car or diagnosis the issues from car, Dealer need to use some of the GTS clients. 
 
 
 Why Java is Platform independent
@@ -27,19 +27,29 @@ Enable dynamic binding for many forms of one class. It means when you need to ex
  To complete structured enterprise applications, only execluding business logic from the main flow is not enough. To maintan the Service Oriented Architecture, we will need presentation, validation, business layer and data access layer as basic. Many different style of SOA are used now adays. Legacy/Rest Facade, Service Bus, Microservices are sample of SOA. 
 
  Flow of Spring MVC
- intecept DispatcherServlet as responsibility for all requests coming to servlet container.
+ intercept DispatcherServlet as responsibility for all requests coming to servlet container.
  DispatcherServlet front controller Received all request and route to handler/controller according to annotation or XML configuration
  After that controller return ModeAndView object.
  The defined view resolver is read again by the dispatcherServlet to invoke view component
+
+difference between filter and interceptor in spring
+Web Servlet - Spring MVC
+before after Dispatcher Servlet
 
  Serilization 
  converting the object value and structure into easily transmittable form. 
 
  Hibernate Object states
- transient, persistent , detached
+  transient, persistent , detached
 
-Interfaces used in hibernate
+Interfaces used in hibernate (SSCT - Q)
  Session, Session Factory, Configuration, Transaction , Query and Criteria
+
+Spring Boot Key components (SAut CLA)
+  Spring Boot Starters.
+  Spring Boot AutoConfigurator.
+  Spring Boot CLI.
+  Spring Boot Actuator.
 
 Spring Boot repositories
   CrudRepository, PagingOrSorting Repository, or JPARepository   
@@ -278,6 +288,12 @@ Explain Components, Modules and Services in Angular
 Kafka
 What is Kafka
 Zoo Keeper
+
+SQL
+
+NoSQL
+
+
 
 
 
