@@ -11,6 +11,8 @@ public class Test1 {
     //I S H I
     //
     public static void main(String[] args) {
+        
+
         int numOfRow = 4;
         String str = "PAYPALISHIRING";
         char[] chArr = str.toCharArray();
@@ -26,9 +28,9 @@ public class Test1 {
             if(fullLine){
                 line[lineIndex] = c;
             }else{
-                if(){
-
-                }
+//                if(){
+//
+//                }
             }
 
 
